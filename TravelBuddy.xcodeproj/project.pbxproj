@@ -13,9 +13,12 @@
 		A1DBB33C2A78FFAF007E7E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DBB33A2A78FFAF007E7E34 /* Main.storyboard */; };
 		A1DBB33E2A78FFB2007E7E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DBB33D2A78FFB2007E7E34 /* Assets.xcassets */; };
 		A1DBB3412A78FFB2007E7E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DBB33F2A78FFB2007E7E34 /* LaunchScreen.storyboard */; };
+		C8FD9F5E030E58FE65FE6B76 /* libPods-TravelBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6822BC36DCA2E8FDD7731C /* libPods-TravelBuddy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A7A7E90210E542C2C8529B9 /* Pods-TravelBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.release.xcconfig"; path = "Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		6964EB89569CB5FF27909F96 /* Pods-TravelBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.debug.xcconfig"; path = "Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		A1DBB3312A78FFAF007E7E34 /* TravelBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DBB3342A78FFAF007E7E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DBB3362A78FFAF007E7E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A1DBB33D2A78FFB2007E7E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1DBB3402A78FFB2007E7E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1DBB3422A78FFB2007E7E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD6822BC36DCA2E8FDD7731C /* libPods-TravelBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FD9F5E030E58FE65FE6B76 /* libPods-TravelBuddy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		038BF15F847DB3DE2F049ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6822BC36DCA2E8FDD7731C /* libPods-TravelBuddy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27F8E638BA9F1075C0E3FFF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6964EB89569CB5FF27909F96 /* Pods-TravelBuddy.debug.xcconfig */,
+				4A7A7E90210E542C2C8529B9 /* Pods-TravelBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1DBB3282A78FFAF007E7E34 = {
 			isa = PBXGroup;
 			children = (
 				A1DBB3332A78FFAF007E7E34 /* TravelBuddy */,
 				A1DBB3322A78FFAF007E7E34 /* Products */,
+				27F8E638BA9F1075C0E3FFF6 /* Pods */,
+				038BF15F847DB3DE2F049ABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1DBB3452A78FFB2007E7E34 /* Build configuration list for PBXNativeTarget "TravelBuddy" */;
 			buildPhases = (
+				BCEDF5A24A6E92BB3A0295AC /* [CP] Check Pods Manifest.lock */,
 				A1DBB32D2A78FFAF007E7E34 /* Sources */,
 				A1DBB32E2A78FFAF007E7E34 /* Frameworks */,
 				A1DBB32F2A78FFAF007E7E34 /* Resources */,
+				65C7CD2527E393472D662C24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65C7CD2527E393472D662C24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEDF5A24A6E92BB3A0295AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1DBB32D2A78FFAF007E7E34 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A1DBB3462A78FFB2007E7E34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6964EB89569CB5FF27909F96 /* Pods-TravelBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +381,7 @@
 		};
 		A1DBB3472A78FFB2007E7E34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7A7E90210E542C2C8529B9 /* Pods-TravelBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
